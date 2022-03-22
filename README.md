@@ -10,7 +10,7 @@ A English to Chinese Dictionary Integration
 
 
 ### 1. 整理及合并
-ECDICT项目内容非常的丰富，后续的资料整合都是以该项目的资料作为基础。该项目最近更新时间已超过一年前，其中部分数据字段如detail，audio等后续暂未添加，因此暂时删去。该数据库中的音标经对照基本为英式音标，同时没有例句资源。
+ECDICT项目内容非常的丰富，后续的资料整合都是以该项目的资料作为基础。该项目最近更新时间已超过一年，其中部分数据字段如detail，audio等后续暂未添加，因此暂时删去。该数据库中的音标经对照基本为英式音标，同时没有例句资源。
 
 <a href="https://u25th-engineer.blog.csdn.net/article/details/105901529?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.channel_param">爬取并处理150708个英语单词的例句</a>文章中，博主自行爬取了单词的注音、释义、例句，并发布了.sql文件。该数据库中的音标（含英、美）及释义字段合并为了同一个字段，使用的时候可能有所不便。通过模糊匹配提取出了ECDICT中缺乏的美式音标，并基于单词进行关联。例句资源也同样进行关联。另，为了便于导出为csv等文件格式使用，所有空值使用文本"nullTag"代替。
 
